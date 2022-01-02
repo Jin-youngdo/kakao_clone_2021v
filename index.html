@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>10:07</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
+    </div>
+
+    <div class="login-page">
+      <header class="login-header">
+        <span class="login-header__title">PePeo</span>
+      </header>
+
+      <form class="login-form">
+        <input type="email" placeholder="카카오메일 아이디, 이메일, 전화번호" />
+        <input type="password" placeholder="비밀번호" />
+        <label> <input type="checkbox" />로그인 상태 유지</label>
+        <input type="submit" value="로그인" />
+        <div class="login-form__or">
+          <div class="login-form__or_line"></div>
+          <div class="login-form__or_text">또는</div>
+          <div class="login-form__or_line"></div>
+        </div>
+        <div class="login-form__qrLogin">
+          <i class="fas fa-qrcode"></i>
+          <input type="submit" value="QR코드로 로그인" />
+        </div>
+        <div class="login-form__account">
+          <a href="#"> 회원가입</a>
+          <a href="#">카카오계정</a>
+          <span>|</span>
+          <a href="#">비밀번호 찾기</a>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
