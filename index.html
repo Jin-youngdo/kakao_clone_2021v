@@ -11,42 +11,31 @@
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>10:07</span>
+        <span>07:27</span>
       </div>
+      <div class="status-bar__column"></div>
       <div class="status-bar__column">
         <i class="fas fa-signal"></i>
         <i class="fas fa-wifi"></i>
-        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-battery-three-quarters fa-pulse"></i>
       </div>
     </div>
 
-    <div class="login-page">
-      <header class="login-header">
-        <span class="login-header__title">PePeo</span>
-      </header>
+    <header class="welcome-header">
+      <img src="img/login_pepe.jpg" />
+      <h1 class="welcome-header__title">Welcome to PePeo</h1>
+      <p class="welcome-header__text">
+        If you have a PePeo Account, log in with your email or phone number.
+      </p>
+    </header>
 
-      <form class="login-form">
-        <input type="email" placeholder="카카오메일 아이디, 이메일, 전화번호" />
-        <input type="password" placeholder="비밀번호" />
-        <label> <input type="checkbox" />로그인 상태 유지</label>
-        <input type="submit" value="로그인" />
-        <div class="login-form__or">
-          <div class="login-form__or_line"></div>
-          <div class="login-form__or_text">또는</div>
-          <div class="login-form__or_line"></div>
-        </div>
-        <div class="login-form__qrLogin">
-          <i class="fas fa-qrcode"></i>
-          <input type="submit" value="QR코드로 로그인" />
-        </div>
-        <div class="login-form__account">
-          <a href="#"> 회원가입</a>
-          <a href="#">카카오계정</a>
-          <span>|</span>
-          <a href="#">비밀번호 찾기</a>
-        </div>
-      </form>
-    </div>
+    <form action="friends.html" method="get" class="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign In" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"

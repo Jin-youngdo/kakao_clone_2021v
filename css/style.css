@@ -1,40 +1,12 @@
-@import "status-bar.css";
+@import "reset.css";
+@import "variables.css";
+/* Components */
+@import "components/status-bar.css";
+/* Screens */
+@import "screens/login.css";
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: 100vh;
-  background-color: wheat;
-}
-
-.login-header {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 40px;
-}
-
-.login-header__title {
-  font-size: 30px;
-  font-weight: 500;
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 30px;
-}
-
-.login-form input {
-  padding: 10px 0px;
-}
-
-.login-form__qrLogin {
-  position: relative;
-  width: 20px;
-  display: flex;
-}
-
-.login-form__qrLogin i {
-  position: absolute;
 }
