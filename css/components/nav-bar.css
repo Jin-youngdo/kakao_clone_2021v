@@ -1,0 +1,63 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__a img {
+  width: 55px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.nav__a img:hover {
+  animation: pepe_jump 1.2s ease-in-out infinite;
+}
+
+@keyframes pepe_jump {
+  0% {
+    transform: translateY(0px) scale(1, 0.75);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.5, 0.75);
+  }
+  100% {
+    transform: translateY(0px) scale(1, 0.75);
+  }
+}
+
+.nav__a {
+  position: relative;
+}
+
+.nav__notification {
+  background-color: red;
+  display: block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  right: -2px;
+  top: -30px;
+}
+
+.find__dot {
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  right: 27px;
+  top: 5px;
+}
