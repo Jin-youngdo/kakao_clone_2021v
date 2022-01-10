@@ -18,4 +18,15 @@
 
 .screen-header__icons span {
   margin-left: 10px;
+  position: relative;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 18px;
+  left: 20px;
 }

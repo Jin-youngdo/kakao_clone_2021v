@@ -26,66 +26,91 @@
       <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span
+          ><i class="fas fa-cog fa-lg"></i>
+          <div class="dot"></div
+        ></span>
       </div>
     </header>
 
-    <main class="main-screen chat-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img src="img/jobless_pepe.jpg" class="user-component__avatar" />
-          <div class="user-component__text">
-            <h4 class="user-component__nick">Jobbless_pepe</h4>
-            <h6 class="user-component__status-msg">
-              I was kicked out of my house yesterday
-            </h6>
+    <main class="main-screen default-screen">
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <i class="fas fa-qrcode"></i>
+          <span class="find-icons__text">QR Code</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="far fa-address-book"></i>
+          <div class="find-icons__icon">
+            <span>Add by</span>
+            <span class="contacts">Contacts</span>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">07:11</span>
-          <div class="badge">1</div>
+        <div class="find-icons__icon">
+          <i class="far fa-plus-square"></i>
+          <span class="find-icons__text">Add by ID</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="far fa-envelope"></i>
+          <span class="find-icons__text">Invite</span>
         </div>
       </div>
 
-      <div class="user-component">
-        <div class="user-component__column">
-          <img src="img/student_pepe.jpg" class="user-component__avatar" />
-          <div class="user-component__text">
-            <h4 class="user-component__nick">Student_pepe</h4>
-            <h6 class="user-component__status-msg">
-              You're going to the lib with me today, right?👍
-            </h6>
-          </div>
-        </div>
-        <div class="user-component__column">
-          <span class="user-component__time">06:17</span>
-          <div class="badge">3</div>
-        </div>
+      <div class="recommended-friends">
+        <h4 class="recommended-friends__title">Recommended-Friends</h4>
+        <span>You have no recommended friends</span>
       </div>
 
-      <div class="user-component">
-        <div class="user-component__column">
-          <div class="user-component__double-avatar">
-            <img class="double-avatar__first" src="img/rich_pepe.png" />
-            <img class="double-avatar__second" src="img/king_pepe.jpg" />
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4 class="open-chat__title">Open chat</h4>
+          <span
+            >Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i
+          ></span>
+        </div>
+
+        <div class="open-post open-post__first">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#Console gamers'</h5>
+            <h6 class="open-post__hashtags">#console#ps5#nds#xbox</h6>
+            <div class="open-post__members">
+              <img src="img/jobless_pepe.jpg" />
+              <span class="open-post__member-count">518 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
           </div>
 
-          <div class="user-component__text">
-            <h4 class="user-component__nick">
-              Rich_pepe, King_pepe
-              <div class="message-status">
-                2<i class="fas fa-bell-slash"></i>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img src="img/open_chat(1).jpg" />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart"></i><span>523</span>
               </div>
-            </h4>
-            <h6 class="user-component__status-msg">
-              Hey, Throw TSLA all of them right now 🥶
-            </h6>
+            </div>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">04:23</span>
-          <div class="badge">2</div>
+
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#Social club</h5>
+            <h6 class="open-post__hashtags">#rich#tsla#NASDAQ#</h6>
+            <div class="open-post__members">
+              <img src="img/rich_pepe.png" />
+              <span class="open-post__member-count">120 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img src="img/open_chat(2).jpg" />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart"></i><span>117</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
