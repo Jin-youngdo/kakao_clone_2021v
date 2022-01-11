@@ -34,3 +34,7 @@
   display: flex;
   justify-content: space-between;
 }
+
+.friends-screen__channel-header:last-child {
+  color: rgba(0, 0, 0, 0.4);
+}

@@ -8,3 +8,29 @@
   color: white;
   font-size: 14px;
 }
+
+.bang {
+  display: inline-flex;
+  flex-direction: column;
+  width: 11px;
+  height: 11px;
+  font-size: 10px;
+  align-items: center;
+  text-align: center;
+  border: 1px solid red;
+  border-color: red;
+  border-radius: 50%;
+  border-width: 1.2px;
+  color: red;
+  margin-left: 2px;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 18px;
+  left: 20px;
+}
