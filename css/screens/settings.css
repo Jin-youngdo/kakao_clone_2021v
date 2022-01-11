@@ -1,0 +1,42 @@
+.settings-header {
+  margin-top: 38px;
+}
+
+.settings__setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  border-bottom: 1px solid rgba(193, 189, 189, 0.1);
+  font-weight: 500;
+}
+
+.settings__setting i {
+  opacity: 0.9;
+  margin-right: 15px;
+  width: 16px;
+  height: 16px;
+}
+
+.settings__setting-column {
+  height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.settings__setting-column:last-child {
+  opacity: 0.6;
+}
+
+.settings__border {
+  border-bottom: 1px solid rgba(193, 189, 189, 0.3);
+  padding-bottom: 25px;
+  margin-bottom: 10px;
+}
+
+.settings-not__border {
+  border-bottom: none;
+  padding-bottom: 90px;
+}

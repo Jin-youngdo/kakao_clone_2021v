@@ -12,7 +12,7 @@
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>07:27</span>
+        <span class="clock"></span>
       </div>
       <div class="status-bar__column"></div>
       <div class="status-bar__column">
@@ -21,6 +21,137 @@
         <i class="fas fa-battery-three-quarters fa-pulse"></i>
       </div>
     </div>
+
+    <header class="alt-header settings-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back();"
+          ><i class="fas fa-angle-left fa-2x"></i
+        ></a>
+      </div>
+
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+
+      <div class="alt-header__column">
+        <i class="fas fa-search fa-lg"></i>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-bullhorn"></i>
+            <span>Notices</span>
+          </div>
+
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-flask"></i>
+            <span>Kakao Lab</span>
+          </div>
+
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting settings__border">
+          <div class="settings__setting-column">
+            <i class="fas fa-info-circle"></i>
+            <span>Version</span>
+          </div>
+
+          <div class="settings__setting-column">Latest Version</div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-user-lock"></i>
+            <span>Privacy</span>
+          </div>
+
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="far fa-bell"></i>
+            <span>Notifications</span>
+          </div>
+
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="far fa-user"></i>
+            <span>Friends</span>
+          </div>
+
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="far fa-comment"></i>
+            <span>Chats</span>
+          </div>
+
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-sun"></i>
+            <span>Display</span>
+            <div class="new-mark">N</div>
+          </div>
+
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-brush"></i>
+            <span>Themes</span>
+            <div class="new-mark">N</div>
+          </div>
+
+          <div class="settings__setting-column">Default theme</div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-phone-alt"></i>
+            <span>Call</span>
+          </div>
+
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting settings__border">
+          <div class="settings__setting-column">
+            <i class="fas fa-ellipsis-h"></i>
+            <span>Etc</span>
+            <div class="new-mark">N</div>
+          </div>
+
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting settings-not__border">
+          <div class="settings__setting-column">
+            <i class="far fa-question-circle"></i>
+            <span>Support</span>
+          </div>
+
+          <div class="settings__setting-column"></div>
+        </li>
+      </ul>
+    </main>
 
     <nav class="nav">
       <ul class="nav__list">
@@ -45,6 +176,7 @@
       </ul>
     </nav>
 
+    <script src="js/time.js"></script>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
