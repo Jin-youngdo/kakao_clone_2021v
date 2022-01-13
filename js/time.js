@@ -6,7 +6,9 @@ function getTime() {
   const hour = time.getHours();
   const minute = time.getMinutes();
 
-  clock.innerHTML = hour + ":" + minute;
+  clock.innerHTML = `${hour < 10 ? `0${hour}` : hour}:${
+    minute < 10 ? `0${minute}` : minute
+  }`;
 }
 
 function init() {

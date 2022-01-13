@@ -1,0 +1,154 @@
+.fa-bars {
+  margin-left: 10px;
+}
+
+.chat-screen__status-bar {
+  background-color: #abc1d1;
+}
+
+.chat-screen {
+  background-color: #abc1d1;
+  height: 1200vh;
+}
+
+.chat-header {
+  background-color: #abc1d1;
+}
+
+.chat {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  color: rgba(255, 255, 255, 0.823);
+  background-color: #92a4b2;
+  padding: 7px 15px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+.message-row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+  margin-right: 0px;
+  margin-left: 5px;
+  background-color: var(--pepe);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 17px;
+}
+
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.message-row img {
+  width: 45px;
+  height: 45px;
+  border-radius: 17px;
+  margin-right: 8px;
+}
+
+.message__author {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  font-size: 15px;
+  display: block;
+  padding-top: 3px;
+  margin-bottom: 7px;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  background-color: white;
+  margin-right: 7px;
+  padding: 8px 10px;
+  border-radius: 13px;
+  font-weight: 500;
+  font-size: 14px;
+  border-top-left-radius: 0px;
+}
+
+.message__time {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.reply {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 5px 10px;
+  height: 38px;
+}
+
+.reply .reply__column:first-child {
+  width: 7%;
+}
+
+.reply .reply__column:last-child {
+  width: 93%;
+  position: relative;
+}
+
+.reply input {
+  box-sizing: border-box;
+  height: 30px;
+  padding-left: 10px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  background-color: rgba(131, 134, 138, 0.1);
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 5px;
+  top: 4px;
+}
+
+.reply__column:last-child > i {
+  right: 35px;
+  top: 7px;
+  font-size: 18px;
+  color: rgba(131, 134, 138, 0.9);
+}
+
+.reply__column button {
+  border-radius: 50%;
+  border: none;
+  height: 23px;
+  width: 23px;
+  background-color: var(--pepe);
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+
+.reply__column .fa-plus-square {
+  opacity: 0.6;
+}
