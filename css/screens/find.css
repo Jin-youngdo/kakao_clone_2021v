@@ -115,6 +115,26 @@
   right: 3px;
 }
 
+@keyframes heartBeat {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.6;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1.5s ease-in-out infinite;
+}
+
 .open-post__heart-count i {
   margin-right: 6px;
   font-size: 11px;

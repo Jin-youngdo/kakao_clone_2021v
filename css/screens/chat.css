@@ -8,7 +8,7 @@
 
 .chat-screen {
   background-color: #abc1d1;
-  height: 1200vh;
+  height: 100vh;
 }
 
 .chat-header {
@@ -31,10 +31,72 @@
   font-size: 13px;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.chat__timestamp-1 {
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+}
+
+.chat__timestamp-2 {
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 5s;
+}
+
 .message-row {
   display: flex;
   width: 100%;
   margin-bottom: 25px;
+}
+
+.message-row__1 {
+  animation: fadeInLeft 1.5s linear forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+
+.message-row__2 {
+  animation: fadeInLeft 1.5s linear forwards;
+  animation-delay: 6s;
+  opacity: 0;
+}
+
+.message-row--own__1 {
+  animation: fadeInRight 1.5s linear forwards;
+  opacity: 0;
+  animation-delay: 3s;
 }
 
 .message-row--own {

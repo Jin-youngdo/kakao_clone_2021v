@@ -20,19 +20,49 @@
   border-radius: 5px;
 }
 
-.nav__a img:hover {
-  animation: pepe_jump 1.2s ease-in-out infinite;
+.nav__btn {
+  animation: pepe_apear 2s ease-in-out forwards;
+  transform: translateY(60px);
 }
 
-@keyframes pepe_jump {
+.nav__btn:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.nav__btn:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.nav__btn:last-child {
+  animation-delay: 0.9s;
+}
+
+.nav__a img:hover {
+  animation: pepe_scale 2s ease-in-out infinite;
+}
+
+@keyframes pepe_apear {
   0% {
-    transform: translateY(0px) scale(1, 0.75);
+    transform: translateY(30px);
+    opacity: 0;
   }
   50% {
-    transform: translateY(-20px) scale(1.5, 0.75);
+    transform: translateY(-10px);
+    opacity: 1;
   }
   100% {
-    transform: translateY(0px) scale(1, 0.75);
+    transform: none;
+  }
+}
+
+@keyframes pepe_scale {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: none;
   }
 }
 
@@ -40,10 +70,23 @@
   position: relative;
 }
 
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .nav__notification {
   position: absolute;
   right: -2px;
   top: -30px;
+  animation: notificationAnimation 2s ease-in-out infinite;
 }
 
 .find__dot {
@@ -52,6 +95,6 @@
   background-color: red;
   border-radius: 50%;
   position: absolute;
-  right: 27px;
-  top: 5px;
+  right: 1px;
+  top: 2px;
 }

@@ -38,3 +38,32 @@
 .friends-screen__channel-header:last-child {
   color: rgba(0, 0, 0, 0.4);
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pepe);
+  position: absolute;
+  height: 130vh;
+  width: 100vw;
+  top: 0;
+  animation: hideSplashScreen 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.splash-screen img {
+  width: 100px;
+  height: 100px;
+  margin-top: -200px;
+}
